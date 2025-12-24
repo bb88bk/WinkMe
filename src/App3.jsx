@@ -5,7 +5,7 @@ import * as htmlToImage from 'html-to-image';
 
 // 整页背景图（替换成你的图床地址）
 const BACKGROUND_URL =
-  'https://i.mji.rip/2025/12/24/ed9cd29ee82b7133730df08cbf93abea.jpeg';
+  'https://telegraph-image-83p.pages.dev/file/BQACAgQAAyEGAATEik5HAANpaUtxsm3dFjSJkck2mUCjcX0MpqwAAqEaAAJpI1hS8Ol81eJN_Ss2BA.jpg';
 
 function NoticePage() {
   // 截图逻辑：使用 html-to-image
@@ -116,3 +116,4 @@ function NoticePage() {
 }
 
 export default NoticePage;
+
