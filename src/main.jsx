@@ -35,7 +35,7 @@ function AppWithAuth() {
       <div className="min-h-screen flex items-center justify-center bg-[#02030a]">
         <div className="w-full max-w-sm rounded-2xl bg-[#0b1020] border border-white/10 shadow-[0_25px_80px_rgba(0,0,0,0.85)] p-6">
           <h1 className="text-lg font-semibold text-white mb-1 text-center">
-            Flirtify Admin Login
+            Wink Me Admin Login
           </h1>
           <p className="text-[11px] text-slate-400 mb-5 text-center">
             Please enter your account and password to access the dashboard.
