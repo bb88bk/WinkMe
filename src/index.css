@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========= Flirtify Theme ========= */
+@layer base {
+  :root {
+    --f-pink: #ff4df0;
+    --f-magenta: #ff2fe6;
+    --f-purple: #a020f0;
+    --f-glow: #ff6ec7;
+
+    --f-bg: #0d0612; /* 全局背景 */
+    --f-card: #1a0b24; /* 卡片背景 */
+    --f-border: #442355; /* 边框 */
+    --f-muted: #b68ad4; /* 次要文字 */
+    --f-text: #f2d9ff; /* 主文字 */
+  }
+}
+
+/* 全局背景 & 字体 */
+body {
+  @apply bg-[var(--f-bg)] text-[var(--f-text)];
+}
+
+/* ========= Components ========= */
+@layer components {
+  /* 主体卡片 */
+  .card {
+    @apply bg-[var(--f-card)] rounded-2xl 
+           border border-[var(--f-border)]
+           shadow-[0_18px_45px_rgba(255,110,199,0.18)];
+  }
+
+  /* 次按钮 */
+  .btn-secondary {
+    @apply px-3 py-1.5 rounded-full text-[11px] md:text-xs
+           bg-[#230d31] border border-[var(--f-border)]
+           text-[var(--f-muted)]
+           hover:text-[var(--f-pink)]
+           hover:border-[var(--f-pink)]
+           transition;
+  }
+
+  /* 主按钮 = LOGO 同款渐变 */
+  .btn-primary {
+    @apply px-4 py-1.5 rounded-full text-[11px] md:text-xs font-medium text-white
+           bg-gradient-to-r from-[var(--f-pink)] to-[var(--f-purple)]
+           shadow-[0_0_15px_rgba(255,79,240,0.6)]
+           hover:brightness-110 transition;
+  }
+
+  /* 光影边框 */
+  .glow-border {
+    @apply border-[2px] border-transparent 
+           bg-gradient-to-r from-[var(--f-pink)] to-[var(--f-purple)]
+           bg-clip-border;
+  }
+}
